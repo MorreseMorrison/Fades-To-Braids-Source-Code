@@ -1,15 +1,70 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
+  <style>
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+#footer {
+  clear: both;
+  height: 100px;
+  padding: 15px 0;
+  background: #D1D1D1;
+  border-top: 5px solid #999999;
+  text-align: center;
+}
+
+#footer p {
+  margin: 0;
+  color: #999999;
+}
+
+#footer a {
+  color: #999999;
+}
+
+#footer a:hover {
+  color: #FFFFFF;
+}
+}
+
+    </style>
 
 <link rel="stylesheet" type="text/css" href="css.css"> 
-   
-    
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
- 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 <title>BazCutz</title>
@@ -26,37 +81,41 @@
 <a class="nav-item nav-link" href="Gallery.html">Gallery</a>
 </div>
 </nav>
-
-
-
-
 <body>
+  <div class="row">
+    <div class="column">
+      <img src="girleyebrows.jpg">
+      <img src="image1.jpg">
+      <img src="image2.jpg">
 
-    <style>
-        table, th, td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
-        </style>
-        </head>
-        <body>
-        
-            
-          
-            <center><div class="w2-container">
-                <h2>About ITLogics</h2>
-                <div class="w3-card-4" style="width:50%">
-                  <img src="servicepicture.jpg" alt="Alps" style="width:100%">
-                  <div class="w3-container w3-center">
-                    <p><b>Hello! And welcome to ITLogics. My name is Morrese Morrison. I founded ITLogics in 2014 with the purpose to 
-                      assist and serve anybody that needs technical help. Whether that may be builing a custom robust website for a newly
-                      founded bussiness, or just for a simple iPhone screen replacement. Whatever it may be it is our sole mission and purpose
-                      to provide you with excellent customer service as well as solutions to any technical issues you may encounter. ITLogics is 
-                      here to make technology Logical!
-                    </b></p>
-                  </div>
-                </div>
-              </div></center>
+    </div>
+    <div class="column">
+      <img src="image3.jpg">
+      <img src="image4.jpg">
+      <img src="image5.jpg">
+
+    </div>
+    <div class="column">
+      <img src="image6.jpg">
+      <img src="image7.jpg">
+      <img src="image8.jpg">
+
+    </div>
+    <div class="column">
+      <img src="image9.jpg">
+      <img src="image10.jpg">
+      <img src="image11.jpg">
+
+    </div>
+  </div>
+</body>
+
+
+<div id="footer">
+  <p id="legal">Copyright &copy; 2021 Designed by <a href="http://itlogics.tech/">ITLogics</a></a></p>
+  </div>
+
+
               
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
